@@ -73,9 +73,7 @@ function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una propiedad con el mismo nombre que el parámetro "propiedad".
    // En ese caso retornar True. Caso contrario, False.
    // Tu código:
-   if(objeto[propiedad]){
-      return true;
-   } return false;
+   return objeto.hasOwnProperty(propiedad);
 }
 
 function verificarPassword(objetoUsuario, password) {
